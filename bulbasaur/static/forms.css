@@ -1,0 +1,21 @@
+.form-control {
+    background-color: var(--dark-purple);
+    color: white;
+    border: 1px solid var(--gold);
+}
+
+.form-control:focus {
+    background-color: var(--dark-purple);
+    border-color: var(--gold);
+    box-shadow: none;
+}
+
+.btn-gold {
+    background-color: var(--gold);
+    color: var(--dark-purple);
+    border: none;
+}
+
+.btn-gold:hover {
+    transform: scale(1.05);
+}

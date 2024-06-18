@@ -1,0 +1,46 @@
+{% extends 'bases/layout.html' %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "services.css" %}">
+{% endblock css_files %}
+{% block content %}
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Services</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card service-card">
+            <img src="https://placehold.co/400" class="card-img-top" alt="Service 1" />
+            <div class="card-body">
+              <h3 class="card-title">Service Name 1</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque lectus nisi, in varius felis congue non.</p>
+              <p class="card-text">Price: $50</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card service-card">
+            <img src="https://placehold.co/400" class="card-img-top" alt="Service 2" />
+            <div class="card-body">
+              <h3 class="card-title">Service Name 2</h3>
+              <p class="card-text">Integer nec odio in dui viverra finibus. Nulla facilisi. Sed nec fermentum lectus.</p>
+              <p class="card-text">Price: $80</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card service-card">
+            <img src="https://placehold.co/400" class="card-img-top" alt="Service 3" />
+            <div class="card-body">
+              <h3 class="card-title">Service Name 3</h3>
+              <p class="card-text">Donec at libero aliquet, tincidunt metus ac, pellentesque enim. Fusce malesuada eros nec felis fermentum.</p>
+              <p class="card-text">Price: $100</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more services as needed -->
+      </div>
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,103 @@
+{% extends 'bases/layout.html' %}
+{% load static %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static 'index.css' %}" />
+{% endblock %}
+
+{% block content %}
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Discover Your Future</h1>
+      <p>Get personalized astrology predictions from our expert astrologers</p>
+      <a href="#services" class="btn btn-primary btn-lg">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- Featured Astrologers -->
+  <section id="astrologers" class="py-5">
+    <div class="container text-center">
+      <h2 class="text-gold">Our Featured Astrologers</h2>
+      <div class="row pt-5">
+        <div class="col-md-4">
+          <img src="https://placehold.co/400" alt="Astrologer 1" class="img-fluid" />
+          <h4 class="pt-3">Astrologer 1</h4>
+          <p>Specialist in Career and Business</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://placehold.co/400" alt="Astrologer 2" class="img-fluid" />
+          <h4 class="pt-3">Astrologer 2</h4>
+          <p>Expert in Love and Relationships</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://placehold.co/400" alt="Astrologer 3" class="img-fluid" />
+          <h4 class="pt-3">Astrologer 3</h4>
+          <p>Master of Tarot Reading</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr />
+  <!-- Services Section -->
+  <section id="services" class="bg-light pb-5">
+    <div class="container text-center">
+      <h2 class="text-gold">Our Services</h2>
+      <div class="row pt-3">
+        <div class="col-md-4">
+          <img src="https://placehold.co/400" alt="Horoscope" class="img-fluid" />
+          <h4 class="pt-3">Horoscope Reading</h4>
+          <p>Get detailed horoscope readings</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://placehold.co/400" alt="Tarot" class="img-fluid" />
+          <h4 class="pt-3">Tarot Reading</h4>
+          <p>Discover what the cards reveal</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://placehold.co/400" alt="Birth Chart" class="img-fluid" />
+          <h4 class="pt-3">Birth Chart Analysis</h4>
+          <p>In-depth birth chart interpretations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <div class="container text-center">
+      <h2 class="text-gold">What Our Clients Say</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <blockquote class="blockquote">
+              <p class="mb-0">"The predictions were incredibly accurate! Highly recommended."</p>
+              <footer class="blockquote-footer">Client 1</footer>
+            </blockquote>
+          </div>
+          <div class="carousel-item">
+            <blockquote class="blockquote">
+              <p class="mb-0">"Amazing insights into my career and personal life."</p>
+              <footer class="blockquote-footer">Client 2</footer>
+            </blockquote>
+          </div>
+          <div class="carousel-item">
+            <blockquote class="blockquote">
+              <p class="mb-0">"Truly enlightening experience with their tarot readings."</p>
+              <footer class="blockquote-footer">Client 3</footer>
+            </blockquote>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+{% endblock %}

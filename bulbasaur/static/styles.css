@@ -1,0 +1,109 @@
+:root {
+    --dark-purple: #4b0082;
+    --gold: #ffd700;
+}
+
+body {
+    background-color: var(--dark-purple);
+    color: white;
+}
+
+.navbar {
+    background-color: var(--dark-purple);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: var(--gold) !important;
+}
+
+.btn-login,
+.btn-register {
+    margin-left: 10px;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+}
+
+.btn-login:hover,
+.btn-register:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    position: relative;
+    top: 3px;
+}
+
+.hero {
+    background: url('https://placehold.co/600x400') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.btn-primary {
+    background-color: var(--gold);
+    border-color: var(--gold);
+}
+
+.btn-primary:hover {
+    background-color: #e6c200;
+    border-color: #e6c200;
+}
+
+.featured-astrologers img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.services img {
+    height: 50px;
+    width: 50px;
+}
+
+.bg-light {
+    background-color: var(--dark-purple) !important;
+}
+
+.text-gold {
+    color: var(--gold) !important;
+}
+
+.blockquote-footer {
+    color: var(--gold) !important;
+}
+
+footer {
+    background-color: var(--darker-purple);
+    color: var(--gold);
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 5px solid rgba(0, 0, 0, 0.1);
+}
